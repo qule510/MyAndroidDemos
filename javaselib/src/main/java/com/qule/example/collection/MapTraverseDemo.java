@@ -9,6 +9,7 @@ import java.util.Map;
  * @version V1.0.0
  * @Description 遍历Map集合demo
  * @date 2017-01-25 21:23
+ * 一般都使用Iterator遍历或者for-each遍历
  */
 public class MapTraverseDemo {
 

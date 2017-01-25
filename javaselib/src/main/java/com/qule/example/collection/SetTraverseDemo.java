@@ -9,6 +9,9 @@ import java.util.Set;
  * @version V1.0.0
  * @Description: 遍历set集合demo
  * @date 2017-01-25 15:30
+ * 总结：
+ * set可以添加null元素，不能添加重复的元素（重复元素以hashCode和equals作为判断依据），当add(Object)的时候，如果set不存在和Object的hashCode一样的元素就直接add.
+ * 如果存在就会调用equals方法比较两个元素,如果返回true,就当作相同元素，否则当作不同元素，添加元素到集合。具体验证可以参考本案例的Collections
  */
 public class SetTraverseDemo {
 
@@ -53,9 +56,6 @@ public class SetTraverseDemo {
         set.add("cc");
         return set;
     }
-    //        PS：
-    //        set可以添加null元素，不能添加重复的元素，当add(Object)的时候，如果set不存在和Object的hashCode一样的元素就直接add.
-    //        如果存在就会调用equals方法比较两个元素,如果返回true,就当作相同元素，否则当作不同元素，添加元素到集合。具体验证可以参考本案例的Collections
 
 
 }

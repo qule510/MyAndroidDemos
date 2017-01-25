@@ -14,6 +14,7 @@ public class ListTraverseDemo {
 
 
     public static void main(String[] args) {
+        testTraverseRemove();
 
         ArrayList<String> list = getArrayList();
         /**
@@ -73,5 +74,17 @@ public class ListTraverseDemo {
         list.add("dd");
 
         return list;
+    }
+
+    public static  void testTraverseRemove(){
+        ArrayList<String> list = getArrayList();
+        for (Iterator<String> iterator = list.iterator(); iterator.hasNext(); ) {
+            String value = iterator.next();
+
+            if (value.equals("aa")){
+                iterator.remove();
+            }
+        }
+        System.out.println(list);
     }
 }
