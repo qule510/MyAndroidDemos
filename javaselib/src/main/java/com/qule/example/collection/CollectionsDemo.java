@@ -5,6 +5,9 @@ import com.qule.example.model.Student;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * @author qule
@@ -40,7 +43,7 @@ PS：内部其实是使用了 装饰模式：继承了该集合类,增强方法�
      * 测试Set添加hashCode相同元素时候，是覆盖还是新增
      */
     public static final void testSetAdd() {
-        HashSet<Student> set = new HashSet<>();
+        Set<Student> set = new HashSet<>();
         set.add(new Student("Jim", 90));
         set.add(new Student("LiLei", 99));
         set.add(new Student("Jim", 90));
@@ -49,7 +52,7 @@ PS：内部其实是使用了 装饰模式：继承了该集合类,增强方法�
     }
 
     public static final void testMapAdd() {
-        HashMap<String, Student> map = new HashMap<>();
+        Map<String, Student> map = new HashMap<>();
         map.put("jim", new Student("jim", 90));
         map.put("jim", new Student("jim", 30));
         map.put(null, null);
@@ -57,7 +60,7 @@ PS：内部其实是使用了 装饰模式：继承了该集合类,增强方法�
     }
 
     public static final void testListAdd() {
-        ArrayList<String> list = new ArrayList();
+        List<String> list = new ArrayList();
         list.add("aa");
         list.add(null);
         System.out.println(list);

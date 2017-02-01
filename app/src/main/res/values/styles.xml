@@ -8,4 +8,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    //MainActivity页面中，底部tab的item的样式
+    <style name="main_bottom_tab_item_style">
+
+        <item name="android:textSize">14sp</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@drawable/bottom_textcolor_drawable_selector</item>
+    </style>
+
 </resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_animation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qule.study.basic.activity.AnimationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_cat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/cat"/>
+
+            <include layout="@layout/line_theme_color"/>
+
+            <Switch
+                android:id="@+id/switcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用XML配置生成动画"
+                android:textOff="使用动态生成动画"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_translate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="位移"/>
+
+                <Button
+                    android:id="@+id/button_rotate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="旋转"/>
+
+                <Button
+                    android:id="@+id/button_alph"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="透明"/>
+
+                <Button
+                    android:id="@+id/button_scale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="缩放"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_animation_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="4个效果集合"/>
+
+            <include layout="@layout/line_theme_color"/>
+
+            <RadioGroup
+                android:id="@+id/radio_interpolator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

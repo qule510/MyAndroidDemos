@@ -1,4 +1,4 @@
-package com.qule.demo;
+package com.qule.study;
 
 import org.junit.Test;
 

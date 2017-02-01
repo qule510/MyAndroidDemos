@@ -2,6 +2,7 @@ package com.qule.example.collection;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 
 /**
@@ -16,7 +17,7 @@ public class ListTraverseDemo {
     public static void main(String[] args) {
         testTraverseRemove();
 
-        ArrayList<String> list = getArrayList();
+        List<String> list = getArrayList();
         /**
          * 方式一，使用for循环
          */
@@ -61,12 +62,12 @@ public class ListTraverseDemo {
 
 
     /**
-     * 生成一个ArrayList，用于遍历
+     * 生成一个List，用于遍历
      *
-     * @return 生成的ArrayList
+     * @return 生成的List
      */
-    public static ArrayList<String> getArrayList() {
-        ArrayList<String> list = new ArrayList<>();
+    public static List<String> getArrayList() {
+        List<String> list = new ArrayList<>();
 
         list.add("aa");
         list.add("bb");
@@ -77,7 +78,7 @@ public class ListTraverseDemo {
     }
 
     public static  void testTraverseRemove(){
-        ArrayList<String> list = getArrayList();
+        List<String> list = getArrayList();
         for (Iterator<String> iterator = list.iterator(); iterator.hasNext(); ) {
             String value = iterator.next();
 

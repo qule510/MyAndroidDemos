@@ -50,7 +50,7 @@ public class SetTraverseDemo {
      * @return 生成的Set<String>
      */
     public static Set<String> getHashSet() {
-        HashSet<String> set = new HashSet<>();
+        Set<String> set = new HashSet<>();
         set.add("aa");
         set.add("bb");
         set.add("cc");

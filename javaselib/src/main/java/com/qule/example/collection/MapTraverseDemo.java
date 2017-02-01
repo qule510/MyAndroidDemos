@@ -14,7 +14,7 @@ import java.util.Map;
 public class MapTraverseDemo {
 
     public static void main(String[] args) {
-        HashMap<String, String> map = getHashMap();
+        Map<String, String> map = getHashMap();
 
         /**
          * 方式1，使用for-each。
@@ -63,12 +63,12 @@ public class MapTraverseDemo {
     }
 
     /**
-     * 生成一个HashMap<String, String>，用于遍历
+     * 生成一个Map<String, String>，用于遍历
      *
-     * @return HashMap<String, String>
+     * @return Map<String, String>
      */
-    public static HashMap<String, String> getHashMap() {
-        HashMap<String, String> map = new HashMap<>();
+    public static Map<String, String> getHashMap() {
+        Map<String, String> map = new HashMap<>();
         map.put("a", "a_value");
         map.put("b", "b_value");
         map.put("c", "c_value");

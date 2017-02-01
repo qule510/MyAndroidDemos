@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lazy_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qule.study.test.LazyFragmentActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_01"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+    <include layout="@layout/line_theme_color"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_02"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+    <include layout="@layout/line_theme_color"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_03"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+</LinearLayout>
