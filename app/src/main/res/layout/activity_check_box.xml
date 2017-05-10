@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_check_box"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qule.study.basic.activity.CheckBoxActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你的兴趣爱好是："/>
+    <CheckBox
+        android:id="@+id/checkbox_football"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="足球"/>
+    <CheckBox
+        android:id="@+id/checkbox_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="看书"/>
+    <CheckBox
+        android:id="@+id/checkbox_song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="唱歌"/>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,1 +1,1 @@
-include ':app', ':javaselib'
+include ':app', ':javaselib', ':notelib', ':notelib', ':mylibrary', ':mynotelibrarys', ':mylibapplication', ':myapplication'

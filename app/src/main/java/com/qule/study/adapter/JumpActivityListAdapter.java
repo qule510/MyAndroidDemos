@@ -2,6 +2,7 @@ package com.qule.study.adapter;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,6 +32,7 @@ public class JumpActivityListAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
+        Log.v("ql","getCount:"+mList.size());
         return mList == null ? 0 : mList.size();
     }
 
@@ -63,6 +65,7 @@ public class JumpActivityListAdapter extends BaseAdapter {
         }
 
         JumpActivityModel model = mList.get(position);
+        Log.v("ql","name:"+model.name);
         hoder.textView.setText(model.name);
 
         return convertView;

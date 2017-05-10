@@ -1,5 +1,6 @@
 package com.qule.study.test;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -35,6 +36,8 @@ public class LazyFragmentActivity extends BaseButterKnifeActivity {
     public int getLayoutId() {
         return R.layout.activity_lazy_fragment;
     }
+
+    Activity mActivity;
 
 
     @Override

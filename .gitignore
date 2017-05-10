@@ -7,3 +7,6 @@
 local.properties
 /captures
 .externalNativeBuild
+libs/
+src/main/java/
+src/main/res/drawable/

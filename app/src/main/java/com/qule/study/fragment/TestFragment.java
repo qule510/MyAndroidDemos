@@ -3,7 +3,7 @@ package com.qule.study.fragment;
 
 import com.qule.study.R;
 import com.qule.study.model.JumpActivityModel;
-import com.qule.study.test.LazyFragmentActivity;
+import com.qule.study.test.HandlerTestActivity;
 
 import java.util.ArrayList;
 
@@ -23,7 +23,8 @@ public class TestFragment extends BaseMainTabFragment {
     @Override
     ArrayList<JumpActivityModel> getJumpActivityModelList() {
         ArrayList list = new ArrayList<>();
-        list.add(new JumpActivityModel("Fragment延迟加载Demo", LazyFragmentActivity.class));
+//        list.add(new JumpActivityModel("Fragment延迟加载Demo", LazyFragmentActivity.class));
+        list.add(new JumpActivityModel("主线程和子线程通信", HandlerTestActivity.class));
         return list;
     }
 

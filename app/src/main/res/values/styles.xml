@@ -8,10 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+    </style>
 
     //MainActivity页面中，底部tab的item的样式
     <style name="main_bottom_tab_item_style">
-
         <item name="android:textSize">14sp</item>
         <item name="android:button">@null</item>
         <item name="android:gravity">center</item>

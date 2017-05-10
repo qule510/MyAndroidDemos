@@ -26,6 +26,9 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     //当前显示 Fragment
     Fragment mCurrentFragment;
 
+    /**
+     * 底部四个选项卡对应的fragment
+     */
     HomeFragment mHomeFragment;
     CustomFragment mCustomFragment;
     BasicFragment mBasicFragment;

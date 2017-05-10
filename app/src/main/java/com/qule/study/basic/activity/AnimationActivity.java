@@ -146,13 +146,22 @@ public class AnimationActivity extends Activity {
             }
 
             if (animation != null) {
+//                动画持续时间，单位为毫秒，默认为0.
                 animation.setDuration(2000);
+//
                 animation.setStartOffset(0);
+//
                 animation.setFillEnabled(false);
+//              动画结束后保持动画前的画面
                 animation.setFillBefore(true);
+// 动画结束后保持动画后的画面
                 animation.setFillAfter(false);
+//              重复次数,默认为0
                 animation.setRepeatCount(0);
+//重复类型，有 reverse 和 restart 两个值，取值为 RESTART(恢复到原状) 或 REVERSE(反转),
+// 必须与 repeatCount 一起使用才能看到效果。因为这里的意义是重复的类型，即回放时的动作。
                 animation.setRepeatMode(Animation.RESTART);
+//
                 animation.setZAdjustment(Animation.ZORDER_NORMAL);
                 animation.setBackgroundColor(0);
                 animation.setDetachWallpaper(false);

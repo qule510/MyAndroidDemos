@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_handler_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    tools:context="com.qule.study.test.HandlerTestActivity">
+
+
+    <Button
+        android:id="@+id/button_post01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="子线城向主线城发消息"/>
+
+    <Button
+        android:id="@+id/button_post02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="主线程向子线城发消息"/>
+
+    <Button
+        android:id="@+id/button_post03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="子线程Looper退出循环，子线程状态"/>
+</LinearLayout>
